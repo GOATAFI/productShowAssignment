@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product Form</title>
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100">
-<div class="max-w-md mx-auto my-8 p-6 bg-white rounded-md shadow-md">
-    <h1 class="text-2xl font-bold mb-4">Add New Product</h1>
-    <form action="submit.php" method="POST" enctype="multipart/form-data"  class="space-y-4">
-        <input type="hidden" id="id" name="id" required>
-        <div>
-            <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
-            <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
-        <div>
-            <label for="category" class="block text-gray-700 font-bold mb-2">Category:</label>
-            <input type="text" id="category" name="category" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
-        <div>
-            <label for="image" class="block text-gray-700 font-bold mb-2">Image:</label>
-            <input type="file" id="image" name="image" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
-        <div>
-            <label for="productionDate" class="block text-gray-700 font-bold mb-2">Production Date:</label>
-            <input type="date" id="productionDate" name="productionDate" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
-        <input type="submit" name="submit" value="submit" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
-    </form>
-</div>
-<!-- <script src="validation.js"></script> -->
+<body>
+    <div class="container">
+        <h1>Add New Product</h1>
+        <form action="submit.php" method="POST" enctype="multipart/form-data">
+            <input type="hidden" id="id" name="id" required>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" required>
+            </div>
+            <div class="form-group">
+                <label for="productionDate">Production Date:</label>
+                <input type="date" id="productionDate" name="productionDate" required>
+            </div>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
