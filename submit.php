@@ -46,10 +46,10 @@ if (isset($_POST['submit'])) {
 
     // Check if query executed successfully
     if ($res == true) {
-        echo "Product Added successfully";
+        echo "<p style='color:green'>Product Added successfully</p>";
 ?>
         <br>
-        <div style="display: flex; margin: 15px; ">
+        <div style="display: flex; ">
             <a href="index.php" style="padding: 10px; margin: 10px; width: 85px; border-radius: 10px; background-color: green; color: white; text-align: center; display: inline-block; text-decoration: none;">Home</a>
             <a href="addProduct.html" style="padding: 10px; margin: 10px; width: 85px; border-radius: 10px; background-color: blue; color: white; text-align: center; display: inline-block; text-decoration: none;">Add Product</a>
         </div>
