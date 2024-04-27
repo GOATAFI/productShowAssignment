@@ -7,3 +7,16 @@ Our team consists of 3 people -
 Our Home Page- 
 ![image](https://github.com/GOATAFI/productShowAssignment/assets/120001914/f98337bc-73b7-49c6-ac9a-585d0f6fa4c3)
 
+Now we have our Product adding page -
+![image](https://github.com/GOATAFI/productShowAssignment/assets/120001914/7aac9175-dc3a-481f-a9e3-8f4065d39e33)
+
+If we were to submit a date that has passed more than 3 months or a future date for Production Date , the code will throw an error -
+![image](https://github.com/GOATAFI/productShowAssignment/assets/120001914/9a7d87db-2859-4dd1-a8f0-61d3305df443)
+
+Also if we were to submit without filling a block it will throw an error too -
+![image](https://github.com/GOATAFI/productShowAssignment/assets/120001914/d3baa3b1-845b-46ad-a41e-9cf2263e4832)
+
+After successfully adding a product it will show a success message with green color and we can navigate to Home and Add Product Page -
+![image](https://github.com/GOATAFI/productShowAssignment/assets/120001914/9a3b5e70-8a0b-41d7-9542-412fef51545c)
+
+
