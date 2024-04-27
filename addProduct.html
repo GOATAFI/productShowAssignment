@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Add New Product</h1>
-        <form action="submit.php" method="POST" enctype="multipart/form-data">
+        <form action="submit.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
             <input type="hidden" id="id" name="id" required>
             <div class="form-group">
                 <label for="name">Name:</label>
@@ -28,7 +28,10 @@
                 <input type="date" id="productionDate" name="productionDate" required>
             </div>
             <input type="submit" name="submit" value="Submit">
+            <a class="homeBtn"  href="index.php" >Go To Home</a>
         </form>
     </div>
+
+    <script src="validation.js"></script>
 </body>
 </html>

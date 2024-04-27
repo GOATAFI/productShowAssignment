@@ -18,7 +18,7 @@ $products = $result->fetch_all(MYSQLI_ASSOC);
 </head>
 <body>
     <header>
-        <h1>Product Management System</h1>
+        <h1>Camera Management System</h1>
         <nav>
             <a href="index.php">Home</a>
             <a href="addProduct.html">Add Product</a>
@@ -30,9 +30,15 @@ $products = $result->fetch_all(MYSQLI_ASSOC);
             <h2>Featured Products</h2>
             <div id="product-slider">
                 <div class="slider-container">
-                    <!-- Slider images will be dynamically added here -->
+                    <!-- Slider images and card-like format -->
                     <?php foreach ($products as $product): ?>
-                        <img src="images/<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
+                        <div class="product-card">
+                            <img src="images/<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
+                            <div class="product-details">
+                                <h3><?php echo $product['name']; ?></h3>
+                                <p>Production Date: <?php echo $product['productionDate']; ?></p>
+                            </div>
+                        </div>
                     <?php endforeach; ?>
                 </div>
                 <div class="slider-controls">
@@ -50,7 +56,7 @@ $products = $result->fetch_all(MYSQLI_ASSOC);
             var sliderContainer = $('.slider-container');
 
             // Show the first image
-            sliderContainer.find('img').hide().eq(currentIndex).show();
+            sliderContainer.find('.product-card').hide().eq(currentIndex).show();
 
             // Slider controls
             $('.prev-btn').click(function() {
@@ -64,7 +70,7 @@ $products = $result->fetch_all(MYSQLI_ASSOC);
 
         function showPrevImage() {
             var sliderContainer = $('.slider-container');
-            var images = sliderContainer.find('img');
+            var images = sliderContainer.find('.product-card');
 
             images.eq(currentIndex).hide();
             currentIndex = (currentIndex - 1 + images.length) % images.length;
@@ -73,7 +79,7 @@ $products = $result->fetch_all(MYSQLI_ASSOC);
 
         function showNextImage() {
             var sliderContainer = $('.slider-container');
-            var images = sliderContainer.find('img');
+            var images = sliderContainer.find('.product-card');
 
             images.eq(currentIndex).hide();
             currentIndex = (currentIndex + 1) % images.length;

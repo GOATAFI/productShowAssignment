@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -61,3 +60,16 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+.homeBtn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.homeBtn:hover {
+    background-color: #2980b9;
+}
