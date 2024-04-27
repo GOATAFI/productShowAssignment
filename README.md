@@ -4,7 +4,7 @@ Our team consists of 3 people -
 2. Afsana Setu - ID: 2154901011
 3. Mehedi Hassan - ID: 2154901019
 
-Our Home Page- 
+Our Home Page where we have a slider with Prev and Next button - 
 ![image](https://github.com/GOATAFI/productShowAssignment/assets/120001914/f98337bc-73b7-49c6-ac9a-585d0f6fa4c3)
 
 Now we have our Product adding page -
